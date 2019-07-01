@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: @penv@
+
+#设置log的环境
+logging:
+  config: classpath:logback-${spring.profiles.active}.xml
+
+
